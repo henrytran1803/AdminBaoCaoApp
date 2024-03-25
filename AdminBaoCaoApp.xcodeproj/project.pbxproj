@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D23602A42BAFBB5200D082F6 /* AdminBaoCaoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602A32BAFBB5200D082F6 /* AdminBaoCaoAppApp.swift */; };
-		D23602A62BAFBB5200D082F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602A52BAFBB5200D082F6 /* ContentView.swift */; };
-		D23602A82BAFBB5200D082F6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602A72BAFBB5200D082F6 /* Item.swift */; };
 		D23602AA2BAFBB5400D082F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23602A92BAFBB5400D082F6 /* Assets.xcassets */; };
 		D23602AD2BAFBB5400D082F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23602AC2BAFBB5400D082F6 /* Preview Assets.xcassets */; };
 		D23602B72BAFBB5500D082F6 /* AdminBaoCaoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602B62BAFBB5500D082F6 /* AdminBaoCaoAppTests.swift */; };
 		D23602C12BAFBB5500D082F6 /* AdminBaoCaoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602C02BAFBB5500D082F6 /* AdminBaoCaoAppUITests.swift */; };
 		D23602C32BAFBB5500D082F6 /* AdminBaoCaoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23602C22BAFBB5500D082F6 /* AdminBaoCaoAppUITestsLaunchTests.swift */; };
+		D2C944312BB0FDB200E1636D /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944302BB0FDB200E1636D /* ItemModel.swift */; };
+		D2C944332BB0FEC700E1636D /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944322BB0FEC700E1636D /* ColorOption.swift */; };
+		D2C944352BB1009E00E1636D /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944342BB1009E00E1636D /* ItemData.swift */; };
+		D2C944372BB1019E00E1636D /* TabBarCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944362BB1019E00E1636D /* TabBarCustomView.swift */; };
+		D2C9443A2BB101D500E1636D /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944392BB101D500E1636D /* ItemRow.swift */; };
+		D2C9443C2BB1049F00E1636D /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9443B2BB1049F00E1636D /* ItemList.swift */; };
+		D2C9443E2BB105BC00E1636D /* ItemEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9443D2BB105BC00E1636D /* ItemEditor.swift */; };
+		D2C944412BB11FB800E1636D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944402BB11FB800E1636D /* ChartView.swift */; };
+		D2C944462BB1282B00E1636D /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944452BB1282B00E1636D /* PieChartView.swift */; };
+		D2C944482BB1338D00E1636D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944472BB1338D00E1636D /* BarChartView.swift */; };
+		D2C9444A2BB1344C00E1636D /* LinearChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944492BB1344C00E1636D /* LinearChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +46,6 @@
 /* Begin PBXFileReference section */
 		D23602A02BAFBB5200D082F6 /* AdminBaoCaoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminBaoCaoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23602A32BAFBB5200D082F6 /* AdminBaoCaoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBaoCaoAppApp.swift; sourceTree = "<group>"; };
-		D23602A52BAFBB5200D082F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D23602A72BAFBB5200D082F6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D23602A92BAFBB5400D082F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23602AC2BAFBB5400D082F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D23602B22BAFBB5500D082F6 /* AdminBaoCaoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdminBaoCaoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +53,17 @@
 		D23602BC2BAFBB5500D082F6 /* AdminBaoCaoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdminBaoCaoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23602C02BAFBB5500D082F6 /* AdminBaoCaoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBaoCaoAppUITests.swift; sourceTree = "<group>"; };
 		D23602C22BAFBB5500D082F6 /* AdminBaoCaoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBaoCaoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2C944302BB0FDB200E1636D /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		D2C944322BB0FEC700E1636D /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
+		D2C944342BB1009E00E1636D /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		D2C944362BB1019E00E1636D /* TabBarCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustomView.swift; sourceTree = "<group>"; };
+		D2C944392BB101D500E1636D /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		D2C9443B2BB1049F00E1636D /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		D2C9443D2BB105BC00E1636D /* ItemEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditor.swift; sourceTree = "<group>"; };
+		D2C944402BB11FB800E1636D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D2C944452BB1282B00E1636D /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		D2C944472BB1338D00E1636D /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		D2C944492BB1344C00E1636D /* LinearChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +114,11 @@
 		D23602A22BAFBB5200D082F6 /* AdminBaoCaoApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2C9442F2BB0FD9300E1636D /* Models */,
+				D2C9442C2BB0FD7200E1636D /* Common */,
+				D2C9442B2BB0FD6C00E1636D /* UI */,
+				D2C9442A2BB0FD6100E1636D /* Components */,
 				D23602A32BAFBB5200D082F6 /* AdminBaoCaoAppApp.swift */,
-				D23602A52BAFBB5200D082F6 /* ContentView.swift */,
-				D23602A72BAFBB5200D082F6 /* Item.swift */,
-				D23602A92BAFBB5400D082F6 /* Assets.xcassets */,
 				D23602AB2BAFBB5400D082F6 /* Preview Content */,
 			);
 			path = AdminBaoCaoApp;
@@ -128,6 +147,78 @@
 				D23602C22BAFBB5500D082F6 /* AdminBaoCaoAppUITestsLaunchTests.swift */,
 			);
 			path = AdminBaoCaoAppUITests;
+			sourceTree = "<group>";
+		};
+		D2C9442A2BB0FD6100E1636D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9443F2BB11FAA00E1636D /* Chart */,
+				D2C944382BB101C100E1636D /* Item */,
+				D2C9442E2BB0FD8A00E1636D /* Home */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D2C9442B2BB0FD6C00E1636D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D2C944322BB0FEC700E1636D /* ColorOption.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D2C9442C2BB0FD7200E1636D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9442D2BB0FD7A00E1636D /* Resources */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D2C9442D2BB0FD7A00E1636D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D23602A92BAFBB5400D082F6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2C9442E2BB0FD8A00E1636D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2C944362BB1019E00E1636D /* TabBarCustomView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2C9442F2BB0FD9300E1636D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2C944302BB0FDB200E1636D /* ItemModel.swift */,
+				D2C944342BB1009E00E1636D /* ItemData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2C944382BB101C100E1636D /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D2C944392BB101D500E1636D /* ItemRow.swift */,
+				D2C9443B2BB1049F00E1636D /* ItemList.swift */,
+				D2C9443D2BB105BC00E1636D /* ItemEditor.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		D2C9443F2BB11FAA00E1636D /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				D2C944402BB11FB800E1636D /* ChartView.swift */,
+				D2C944452BB1282B00E1636D /* PieChartView.swift */,
+				D2C944472BB1338D00E1636D /* BarChartView.swift */,
+				D2C944492BB1344C00E1636D /* LinearChartView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +351,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23602A62BAFBB5200D082F6 /* ContentView.swift in Sources */,
-				D23602A82BAFBB5200D082F6 /* Item.swift in Sources */,
+				D2C9444A2BB1344C00E1636D /* LinearChartView.swift in Sources */,
+				D2C944372BB1019E00E1636D /* TabBarCustomView.swift in Sources */,
+				D2C9443E2BB105BC00E1636D /* ItemEditor.swift in Sources */,
+				D2C944312BB0FDB200E1636D /* ItemModel.swift in Sources */,
 				D23602A42BAFBB5200D082F6 /* AdminBaoCaoAppApp.swift in Sources */,
+				D2C9443C2BB1049F00E1636D /* ItemList.swift in Sources */,
+				D2C944412BB11FB800E1636D /* ChartView.swift in Sources */,
+				D2C944462BB1282B00E1636D /* PieChartView.swift in Sources */,
+				D2C9443A2BB101D500E1636D /* ItemRow.swift in Sources */,
+				D2C944352BB1009E00E1636D /* ItemData.swift in Sources */,
+				D2C944332BB0FEC700E1636D /* ColorOption.swift in Sources */,
+				D2C944482BB1338D00E1636D /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
