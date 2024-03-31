@@ -19,6 +19,15 @@ struct TabBarCustomView: View {
                 .tabItem {
                     Label("Chart", systemImage: "chart.bar")
                 }
+            ApiListView()
+                .tabItem {
+                    Label("Login", systemImage: "7.square")
+                }
+            LoginView()
+                .tabItem {
+                    Label("Login", systemImage: "9.square")
+                }
+          
         }
     }
 }

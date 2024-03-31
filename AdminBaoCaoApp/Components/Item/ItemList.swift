@@ -16,7 +16,7 @@ struct ItemList: View {
         NavigationSplitView {
             List(selection: $selection) {
                 ForEach(Period.allCases) { period in
-                    Section(header: Text(period.name).font(.callout).foregroundColor(.secondary).fontWeight(.bold)){
+                    Section(header:sectionHeader(for: period)){
                         
                         ForEach(itemData.sortedEvents(period: period)) { item in
                             ItemRow(item: item)
@@ -104,6 +104,15 @@ struct ItemList: View {
                 }
             }
         }
+    }
+    private func sectionHeader(for period: Period) -> some View {
+        let total = itemData.sortedEvents(period: period).reduce(into: 0) { result, item in
+            result += item.title
+        }
+        return Text("\(period.name) có tổng là: (\(total))")
+            .font(.callout)
+            .foregroundColor(.secondary)
+            .fontWeight(.bold)
     }
 }
 
