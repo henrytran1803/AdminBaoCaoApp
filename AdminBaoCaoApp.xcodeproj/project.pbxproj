@@ -19,6 +19,7 @@
 		D2B1C6F52BB90CCE009C5542 /* ApiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1C6F42BB90CCE009C5542 /* ApiListView.swift */; };
 		D2B1C6F72BB90DC3009C5542 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1C6F62BB90DC3009C5542 /* userModel.swift */; };
 		D2B1C6F92BB91243009C5542 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1C6F82BB91243009C5542 /* UserDetailView.swift */; };
+		D2B1C6FB2BB9194F009C5542 /* Screen Recording 2024-03-31 at 11.06.41.mov in Resources */ = {isa = PBXBuildFile; fileRef = D2B1C6FA2BB9194F009C5542 /* Screen Recording 2024-03-31 at 11.06.41.mov */; };
 		D2C944312BB0FDB200E1636D /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944302BB0FDB200E1636D /* ItemModel.swift */; };
 		D2C944332BB0FEC700E1636D /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944322BB0FEC700E1636D /* ColorOption.swift */; };
 		D2C944352BB1009E00E1636D /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944342BB1009E00E1636D /* ItemData.swift */; };
@@ -65,6 +66,7 @@
 		D2B1C6F42BB90CCE009C5542 /* ApiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiListView.swift; sourceTree = "<group>"; };
 		D2B1C6F62BB90DC3009C5542 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		D2B1C6F82BB91243009C5542 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		D2B1C6FA2BB9194F009C5542 /* Screen Recording 2024-03-31 at 11.06.41.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Screen Recording 2024-03-31 at 11.06.41.mov"; sourceTree = "<group>"; };
 		D2C944302BB0FDB200E1636D /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		D2C944322BB0FEC700E1636D /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
 		D2C944342BB1009E00E1636D /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		D2C9442C2BB0FD7200E1636D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D2B1C6FA2BB9194F009C5542 /* Screen Recording 2024-03-31 at 11.06.41.mov */,
 				D2C9442D2BB0FD7A00E1636D /* Resources */,
 			);
 			path = Common;
@@ -359,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B1C6FB2BB9194F009C5542 /* Screen Recording 2024-03-31 at 11.06.41.mov in Resources */,
 				D23602AD2BAFBB5400D082F6 /* Preview Assets.xcassets in Resources */,
 				D23602AA2BAFBB5400D082F6 /* Assets.xcassets in Resources */,
 			);
