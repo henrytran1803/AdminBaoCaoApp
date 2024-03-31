@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemList: View {
-    @ObservedObject var itemData: ItemData
+    @Binding var itemData: ItemData
     @State private var isAddingNewEvent = false
     @State private var newItem = Item()
     @State private var selection: Item?
@@ -118,6 +118,7 @@ struct ItemList: View {
 
 struct ItemList_Previews: PreviewProvider {
     static var previews: some View {
-        ItemList(itemData: ItemData())
+        let ItemData = ItemData()
+        ItemList(itemData: .constant(ItemData))
     }
 }

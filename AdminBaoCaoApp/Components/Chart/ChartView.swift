@@ -15,16 +15,16 @@ enum ChartItem: String, CaseIterable, Identifiable {
 struct ChartView: View {
     @State private var selectedChart: ChartItem = .pie
     @State private var selectedPeriod: Period = .now
-    @ObservedObject var itemData: ItemData
+    @Binding var itemData: ItemData
     
     var body: some View {
         VStack {
             Spacer()
             switch selectedChart {
             case .pie:
-                PieChartView(itemData: sortedItems)
+                PieChartView(itemData: $sortedItems)
             case .bar:
-                BarChartView(itemData: sortedItems)
+                BarChartView(itemData: $sortedItems)
             }
             Spacer()
             Picker("Period", selection: $selectedPeriod) {
@@ -68,7 +68,8 @@ struct ChartView: View {
 
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartView(itemData: ItemData())
+        let ItemData = ItemData()
+        ChartView(itemData: .constant(ItemData))
     }
 }
 extension Item {

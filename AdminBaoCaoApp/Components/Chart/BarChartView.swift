@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 struct BarChartView: View {
-    @State var itemData: [Item]
+    @Binding var itemData: [Item]
     
     var body: some View {
         Chart {
@@ -24,7 +24,7 @@ struct BarChartView: View {
         
     }
 }
-
-#Preview {
-    BarChartView(itemData: ItemData().items)
-}
+//
+//#Preview {
+//    BarChartView(itemData: ItemData().items)
+//}

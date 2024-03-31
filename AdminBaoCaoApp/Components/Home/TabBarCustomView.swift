@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct TabBarCustomView: View {
+    @State var itemData = ItemData()
     var body: some View {
         TabView {
-            ItemList(itemData: ItemData())
+            ItemList(itemData: $itemData)
                 .tabItem {
                     Label("Menu", systemImage: "house")
                 }
 
-            ChartView(itemData: ItemData())
+            ChartView(itemData: $itemData)
                 .tabItem {
                     Label("Chart", systemImage: "chart.bar")
                 }

@@ -15,7 +15,7 @@ struct Product: Identifiable {
 }
 
 struct PieChartView: View {
-    @State var itemData: [Item]
+    @Binding var itemData: [Item]
     var body: some View {
         Chart(itemData) { product in
             SectorMark(
@@ -35,8 +35,8 @@ struct PieChartView: View {
         }
     }
 }
-struct PieChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        PieChartView(itemData: ItemData().items)
-    }
-}
+//struct PieChartView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PieChartView(itemData: ItemData().items)
+//    }
+//}
