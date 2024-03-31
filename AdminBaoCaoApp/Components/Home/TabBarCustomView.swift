@@ -21,7 +21,7 @@ struct TabBarCustomView: View {
                 }
             ApiListView()
                 .tabItem {
-                    Label("Login", systemImage: "7.square")
+                    Label("APICALL", systemImage: "7.square")
                 }
             LoginView()
                 .tabItem {
