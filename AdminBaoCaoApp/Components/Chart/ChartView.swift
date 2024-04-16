@@ -16,15 +16,15 @@ struct ChartView: View {
     @State private var selectedChart: ChartItem = .pie
     @State private var selectedPeriod: Period = .now
     @Binding var itemData: ItemData
-    
+    @State var isAnimateChart = false
     var body: some View {
         VStack {
             Spacer()
             switch selectedChart {
             case .pie:
-                PieChartView(itemData: $sortedItems)
+                PieChartView(itemData: $sortedItems).animation(.easeInOut)
             case .bar:
-                BarChartView(itemData: $sortedItems)
+                BarChartView(itemData: $sortedItems).animation(.easeInOut)
             }
             Spacer()
             Picker("Period", selection: $selectedPeriod) {

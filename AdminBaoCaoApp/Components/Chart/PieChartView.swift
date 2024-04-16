@@ -8,11 +8,6 @@
 import SwiftUI
 import Charts
 
-struct Product: Identifiable {
-    let id = UUID()
-    let title: String
-    let revenue: Double
-}
 
 struct PieChartView: View {
     @Binding var itemData: [Item]
@@ -25,6 +20,8 @@ struct PieChartView: View {
                 ),
                 innerRadius: .ratio(0.6),
                 angularInset: 8
+    
+                    
             )
             .foregroundStyle(
                 by: .value(
@@ -32,8 +29,11 @@ struct PieChartView: View {
                     product.formattedDate()
                 )
             )
+            
+            
         }
     }
+
 }
 //struct PieChartView_Previews: PreviewProvider {
 //    static var previews: some View {
