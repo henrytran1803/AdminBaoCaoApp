@@ -79,6 +79,7 @@ struct LoginView: View {
                         dataLogin[0].value = loginCount
                         dataLogin[1].value = loginSuccess
                     }
+                    hideKeyboard()
                 }, label: {
                     RoundedRectangle(cornerRadius: 25)
                         .frame(width: 150, height: 50)
@@ -105,8 +106,16 @@ struct LoginView: View {
                 )
             }
     }
+    
 }
 
 #Preview {
     LoginView()
 }
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

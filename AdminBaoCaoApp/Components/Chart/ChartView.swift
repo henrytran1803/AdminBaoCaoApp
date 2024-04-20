@@ -10,6 +10,7 @@ import Charts
 enum ChartItem: String, CaseIterable, Identifiable {
     case pie = "PieChart"
     case bar = "BarChart"
+    case line = "LineChart"
     var id: ChartItem { self }
 }
 struct ChartView: View {
@@ -25,6 +26,8 @@ struct ChartView: View {
                 PieChartView(itemData: $sortedItems).animation(.easeInOut)
             case .bar:
                 BarChartView(itemData: $sortedItems).animation(.easeInOut)
+            case .line:
+                LineChartView(itemData: $sortedItems).animation(.easeInOut)
             }
             Spacer()
             Picker("Period", selection: $selectedPeriod) {

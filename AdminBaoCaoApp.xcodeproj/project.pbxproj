@@ -30,7 +30,7 @@
 		D2C944412BB11FB800E1636D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944402BB11FB800E1636D /* ChartView.swift */; };
 		D2C944462BB1282B00E1636D /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944452BB1282B00E1636D /* PieChartView.swift */; };
 		D2C944482BB1338D00E1636D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944472BB1338D00E1636D /* BarChartView.swift */; };
-		D2C9444A2BB1344C00E1636D /* LinearChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944492BB1344C00E1636D /* LinearChartView.swift */; };
+		D2C9444A2BB1344C00E1636D /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C944492BB1344C00E1636D /* LineChartView.swift */; };
 		D2E0F73D2BCE3DF4001BEE13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E0F73C2BCE3DF4001BEE13 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,7 @@
 		D2C944402BB11FB800E1636D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		D2C944452BB1282B00E1636D /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		D2C944472BB1338D00E1636D /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
-		D2C944492BB1344C00E1636D /* LinearChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearChartView.swift; sourceTree = "<group>"; };
+		D2C944492BB1344C00E1636D /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		D2E0F73C2BCE3DF4001BEE13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,7 +256,7 @@
 				D2C944402BB11FB800E1636D /* ChartView.swift */,
 				D2C944452BB1282B00E1636D /* PieChartView.swift */,
 				D2C944472BB1338D00E1636D /* BarChartView.swift */,
-				D2C944492BB1344C00E1636D /* LinearChartView.swift */,
+				D2C944492BB1344C00E1636D /* LineChartView.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B1C6F32BB90CC2009C5542 /* ApiRow.swift in Sources */,
-				D2C9444A2BB1344C00E1636D /* LinearChartView.swift in Sources */,
+				D2C9444A2BB1344C00E1636D /* LineChartView.swift in Sources */,
 				D2C944372BB1019E00E1636D /* TabBarCustomView.swift in Sources */,
 				D2C9443E2BB105BC00E1636D /* ItemEditor.swift in Sources */,
 				D2B1C6F92BB91243009C5542 /* UserDetailView.swift in Sources */,

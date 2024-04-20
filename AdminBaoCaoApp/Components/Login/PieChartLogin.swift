@@ -42,7 +42,7 @@ struct PieChartLogin: View {
                         product.name
                     )
                 )
-            }
+            }.animation(.smooth)
             .frame(width: 300, height: 300)
             .padding()
         }

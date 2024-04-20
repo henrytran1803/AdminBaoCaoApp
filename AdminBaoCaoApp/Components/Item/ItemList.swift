@@ -68,23 +68,6 @@ struct ItemList: View {
                             }
                             
                         }
-//                        .toolbar {
-//                            ToolbarItem {
-//                                Button("Cancel") {
-//                                   isAddingNewEvent = false
-//                                }
-//                            }
-//                            
-//                            ToolbarItem {
-//                                Button(action: {
-//                                    itemData.add(newItem)
-//                                    isAddingNewEvent = false
-//                                }) {
-//                                    Text("Add")
-//                                }
-//                                .disabled(newItem.title.isEmpty)
-//                            }
-//                        }
                 }
                 .presentationDetents([.height(500)])
                 .presentationDragIndicator(.visible)

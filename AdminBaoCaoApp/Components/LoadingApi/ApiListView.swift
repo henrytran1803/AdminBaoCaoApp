@@ -10,12 +10,14 @@ import SwiftUI
 
 struct ApiListView: View {
     @State private var users: [GitHubUser] = []
+    @State private var searchText = ""
 
     var body: some View {
-        NavigationView{
-            List(users, id: \.login) { user in
+        NavigationView {
+            List(filteredUsers, id: \.login) { user in
                 ApiRow(user: user)
             }
+            .searchable(text: $searchText)
             .onAppear {
                 fetchGitHubUsers { fetchedUsers in
                     if let fetchedUsers = fetchedUsers {
@@ -25,7 +27,16 @@ struct ApiListView: View {
                     }
                 }
             }
-        }.navigationTitle("Loading API")
+            .navigationTitle("GitHub Users")
+        }
+    }
+
+    var filteredUsers: [GitHubUser] {
+        if searchText.isEmpty {
+            return users
+        } else {
+            return users.filter { $0.login.localizedCaseInsensitiveContains(searchText) }
+        }
     }
 //    func loading1(uRL:String) {
 //            let url = URL(string: uRL)
