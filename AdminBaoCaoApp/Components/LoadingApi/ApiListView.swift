@@ -13,7 +13,11 @@ struct ApiListView: View {
     @State private var searchText = ""
 
     var body: some View {
+//        Text("Tran Viet Anh - Bai 7")
+//            .font(.title)
         NavigationView {
+                
+            
             List(filteredUsers, id: \.login) { user in
                 ApiRow(user: user)
             }
@@ -27,7 +31,7 @@ struct ApiListView: View {
                     }
                 }
             }
-            .navigationTitle("GitHub Users")
+            .navigationTitle("Nhom 14,Tran Viet Anh")
         }
     }
 

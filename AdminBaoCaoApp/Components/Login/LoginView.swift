@@ -26,6 +26,12 @@ struct LoginView: View {
     
     var body: some View {
         VStack(alignment: .leading){
+            Text("Nhom 14")
+                .font(.system(size: 40))
+                .bold()
+            Text("Tran Viet Anh - Bai 9")
+                .font(.system(size: 20))
+                .bold()
             Text("Đăng nhập")
                 .font(.system(size: 40))
                 .bold()
